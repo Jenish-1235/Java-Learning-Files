@@ -128,5 +128,22 @@ public class linkedList {
         System.out.println(size);
     }
 
+    public void reverseIterate(){
+
+        if (head == null || head.next == null) {
+            return;
+        }
+        Node prevNode = head;
+        Node currNode = head.next;
+        while(currNode != null){
+            Node nextNode = currNode.next;
+            currNode.next = prevNode;
+
+            prevNode = currNode;
+            currNode = nextNode;
+        }
+
+    }
+
 
 }
