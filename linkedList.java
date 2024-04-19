@@ -145,5 +145,16 @@ public class linkedList {
 
     }
 
+    public Node reverRecursive(Node node){
+        if (head == null || head.next == null) {
+            return head;
+        }
+        Node newHead = reverRecursive(head.next);
+        head.next.next = head;
+        head.next = null;
+
+        return newHead;
+    }
+
 
 }
