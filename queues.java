@@ -1,13 +1,15 @@
+import java.util.*;
+
 public class queues {
 
 
     // implementation using array
-    static class Queue{
+    static class queue{
         static int arr[];
         static int size;
         static int rear = -1;
 
-        Queue(int n){
+        queue(int n){
             arr = new int[n];
             this.size = n;
         }
@@ -58,8 +60,13 @@ public class queues {
          * 1. Array : - Fixed Size
          * index 0 is front , last elements index is rear.
          * 
-         * 2. 
+         * 2. Linked List
          */
+
+        //  Implementation using collection framework 
+
+        // Queue <Integer> q = new LinkedList<>();
+        Queue <Integer> q = new ArrayDeque<>();
     }
 
 
